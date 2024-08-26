@@ -27,7 +27,7 @@ useEffect(()=>{
 },[todo])
 
 useEffect(()=>{
-  setTodo(JSON.parse(localStorage.getItem("todos")))
+  setTodo(JSON.parse(localStorage.getItem("todos")) || [])
   count=localStorage.getItem("count_todo")
 },[])
 
